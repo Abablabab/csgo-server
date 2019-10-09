@@ -17,16 +17,21 @@
 					// so all that's left is our customisation		
 					"exec" {
 						"exec"	"jim.cfg"
-						"exec"	"bots_easy.cfg"
+						//"exec"	"bots_none.cfg"
+						//"exec"	"bots_easy.cfg"
+						"exec"	"bots_hard.cfg"
 					}
+					
+					"convars" {
+						"mapgroup"	"mg_bombcollection"
+					}
+					
 	
 					// List of mapgroups valid for this game mode ( competitive )
 					// We get these from the valve updated gamemodes.txt
 					// It remains to be seen how this deals with duplicates (as there are in delta and sigma)
 					"mapgroupsMP" {
-						"mg_active"			""
-						"mg_casualdelta"	""
-						"mg_casualsigma"	""
+						"mg_bombcollection"	""
 					}
 				}
 
@@ -36,11 +41,13 @@
 					"exec" {
 						"exec"	"server_last.cfg"
 					}
+					
+					"convars" {
+						"mapgroup"	"mg_bombcollection"
+					}
 
 					"mapgroupsMP" {
-						"mg_active"			""
-						"mg_casualdelta"	""
-						"mg_casualsigma"	""
+						"mg_bombcollection"	""
 					}
 				}
 			}
@@ -100,12 +107,24 @@
 		}
 	}
 	
-	// Example definition 
+	// Custom mapgroups
 	"mapgroups" {
-		"mg_example" {
-			"name"	"mg_example"
+		"mg_bombcollection" {
+			"name"  "mg_bombcollection"
 			"maps" {
-				"de_dust2"	""
+				"de_aztec"      ""
+				"de_breach"     ""
+				"de_cache"      ""
+				"de_canals"     ""
+				"de_cbble"      ""
+				"de_inferno"    ""
+				"de_mirage"     ""
+				"de_nuke"       ""
+				"de_overpass"   ""
+				"de_seaside"    ""
+				"de_train"      ""
+				"de_vertigo"    ""
+				"de_zoo"        ""
 			}
 		}
 	}
