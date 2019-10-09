@@ -1,0 +1,112 @@
+// To use this file, rename it to GameModes_Server.txt
+//
+// Values here override the default gamemodes.txt 
+// I've reflowed this from the original
+
+"GameModes_Server.txt" {
+	"gameTypes" {
+		"classic" {
+			"gameModes" {
+				"competitive" {
+
+					// Note that maxplayers doesn't go in the convar block.
+					// Another way to set maxplayers is to add -maxplayers_override XX to the cmd line.
+					"maxplayers"	"11"	
+		
+					// gamemodes.txt loads cfg/gamemode_competitve.cfg for us 
+					// so all that's left is our customisation		
+					"exec" {
+						"exec"	"jim.cfg"
+						"exec"	"bots_easy.cfg"
+					}
+	
+					// List of mapgroups valid for this game mode ( competitive )
+					// We get these from the valve updated gamemodes.txt
+					// It remains to be seen how this deals with duplicates (as there are in delta and sigma)
+					"mapgroupsMP" {
+						"mg_active"			""
+						"mg_casualdelta"	""
+						"mg_casualsigma"	""
+					}
+				}
+
+				"casual" {
+					"maxplayers"		"30"
+
+					"exec" {
+						"exec"	"server_last.cfg"
+					}
+
+					"mapgroupsMP" {
+						"mg_active"			""
+						"mg_casualdelta"	""
+						"mg_casualsigma"	""
+					}
+				}
+			}
+		}
+		"gungame" {
+			"gameModes" {
+				"gungameprogressive" {
+					"maxplayers"	"10"
+
+					// These are the configs that get executed when a game mode of this type is created
+					"exec" {
+						"exec" "server_last.cfg"
+					}
+
+					"mapgroupsMP" {
+						"mg_armsrace"   ""
+					}
+
+					"weaponprogression_ct" {
+						"deagle"        { "kills"   "5" }
+						"awp"           { "kills"   "5" }
+						"knifegg"       { "kills"   "1" }
+					}
+
+					"weaponprogression_t" {
+						"deagle"        { "kills"   "5" }
+						"awp"           { "kills"   "5" }
+						"knifegg"       { "kills"   "1" }
+					}
+				}
+				
+				"gungametrbomb" {
+					"maxplayers"	"10"
+
+					// These are the configs that get executed when a game mode of this type is created
+					"exec" {
+						"exec"	"server_last.cfg"
+					}
+
+					"mapgroupsMP" {
+						"mg_demolition"	""
+					}
+
+					"weaponprogression_ct" {
+						"m4a1"		{ "kills"   "1" }
+						"awp"       { "kills"   "1" }
+						"Scar20"    { "kills"   "1" }
+					}
+
+					"weaponprogression_t"  {
+						"ak47"	{ "kills"   "1" }
+						"awp"   { "kills"   "1" }
+						"g3sg1" { "kills"   "1" }
+					}
+				}
+			}
+		}
+	}
+	
+	// Example definition 
+	"mapgroups" {
+		"mg_example" {
+			"name"	"mg_example"
+			"maps" {
+				"de_dust2"	""
+			}
+		}
+	}
+}
