@@ -22,10 +22,6 @@
                         "exec"      "bots_hard.cfg"
                     }
 
-                    "convars" {
-                        "mapgroup"  "mg_bombcollection"
-                    }
-
                     // List of mapgroups valid for this game mode ( competitive )
                     // We get these from the valve updated gamemodes.txt
                     // It remains to be seen how this deals with duplicates (as there are in delta and sigma)
@@ -39,10 +35,6 @@
 
                     "exec" {
                         "exec"  "server_last.cfg"
-                    }
-
-                    "convars" {
-                        "mapgroup"  "mg_bombcollection"
                     }
 
                     "mapgroupsMP" {
