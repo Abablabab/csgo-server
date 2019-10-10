@@ -1,3 +1,5 @@
+de_abbey
+de_austria
 de_aztec
 de_breach
 de_cache
