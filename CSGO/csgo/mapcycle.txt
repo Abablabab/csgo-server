@@ -3,6 +3,7 @@ de_breach
 de_cache
 de_canals
 de_cbble
+de_dust2
 de_inferno
 de_mirage
 de_nuke 
