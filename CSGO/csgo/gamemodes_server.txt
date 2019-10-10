@@ -4,131 +4,130 @@
 // I've reflowed this from the original
 
 "GameModes_Server.txt" {
-	"gameTypes" {
-		"classic" {
-			"gameModes" {
-				"competitive" {
+    "gameTypes" {
+        "classic" {
+            "gameModes" {
+                "competitive" {
 
-					// Note that maxplayers doesn't go in the convar block.
-					// Another way to set maxplayers is to add -maxplayers_override XX to the cmd line.
-					"maxplayers"	"11"	
-		
-					// gamemodes.txt loads cfg/gamemode_competitve.cfg for us 
-					// so all that's left is our customisation		
-					"exec" {
-						"exec"	"jim.cfg"
-						//"exec"	"bots_none.cfg"
-						//"exec"	"bots_easy.cfg"
-						"exec"	"bots_hard.cfg"
-					}
-					
-					"convars" {
-						"mapgroup"	"mg_bombcollection"
-					}
-					
-	
-					// List of mapgroups valid for this game mode ( competitive )
-					// We get these from the valve updated gamemodes.txt
-					// It remains to be seen how this deals with duplicates (as there are in delta and sigma)
-					"mapgroupsMP" {
-						"mg_bombcollection"	""
-					}
-				}
+                    // Note that maxplayers doesn't go in the convar block.
+                    // Another way to set maxplayers is to add -maxplayers_override XX to the cmd line.
+                    "maxplayers"    "11"
 
-				"casual" {
-					"maxplayers"		"30"
+                    // gamemodes.txt loads cfg/gamemode_competitve.cfg for us
+                    // so all that's left is our customisation
+                    "exec" {
+                        "exec"      "jim.cfg"
+                        //"exec"    "bots_none.cfg"
+                        //"exec"    "bots_easy.cfg"
+                        "exec"      "bots_hard.cfg"
+                    }
 
-					"exec" {
-						"exec"	"server_last.cfg"
-					}
-					
-					"convars" {
-						"mapgroup"	"mg_bombcollection"
-					}
+                    "convars" {
+                        "mapgroup"  "mg_bombcollection"
+                    }
 
-					"mapgroupsMP" {
-						"mg_bombcollection"	""
-					}
-				}
-			}
-		}
-		"gungame" {
-			"gameModes" {
-				"gungameprogressive" {
-					"maxplayers"	"10"
+                    // List of mapgroups valid for this game mode ( competitive )
+                    // We get these from the valve updated gamemodes.txt
+                    // It remains to be seen how this deals with duplicates (as there are in delta and sigma)
+                    "mapgroupsMP" {
+                        "mg_bombcollection" ""
+                    }
+                }
 
-					// These are the configs that get executed when a game mode of this type is created
-					"exec" {
-						"exec" "server_last.cfg"
-					}
+                "casual" {
+                    "maxplayers"        "30"
 
-					"mapgroupsMP" {
-						"mg_armsrace"   ""
-					}
+                    "exec" {
+                        "exec"  "server_last.cfg"
+                    }
 
-					"weaponprogression_ct" {
-						"deagle"        { "kills"   "5" }
-						"awp"           { "kills"   "5" }
-						"knifegg"       { "kills"   "1" }
-					}
+                    "convars" {
+                        "mapgroup"  "mg_bombcollection"
+                    }
 
-					"weaponprogression_t" {
-						"deagle"        { "kills"   "5" }
-						"awp"           { "kills"   "5" }
-						"knifegg"       { "kills"   "1" }
-					}
-				}
-				
-				"gungametrbomb" {
-					"maxplayers"	"10"
+                    "mapgroupsMP" {
+                        "mg_bombcollection" ""
+                    }
+                }
+            }
+        }
+        "gungame" {
+            "gameModes" {
+                "gungameprogressive" {
+                    "maxplayers"    "10"
 
-					// These are the configs that get executed when a game mode of this type is created
-					"exec" {
-						"exec"	"server_last.cfg"
-					}
+                    // These are the configs that get executed when a game mode of this type is created
+                    "exec" {
+                        "exec" "server_last.cfg"
+                    }
 
-					"mapgroupsMP" {
-						"mg_demolition"	""
-					}
+                    "mapgroupsMP" {
+                        "mg_armsrace"   ""
+                    }
 
-					"weaponprogression_ct" {
-						"m4a1"		{ "kills"   "1" }
-						"awp"       { "kills"   "1" }
-						"Scar20"    { "kills"   "1" }
-					}
+                    "weaponprogression_ct" {
+                        "deagle"        { "kills"   "5" }
+                        "awp"           { "kills"   "5" }
+                        "knifegg"       { "kills"   "1" }
+                    }
 
-					"weaponprogression_t"  {
-						"ak47"	{ "kills"   "1" }
-						"awp"   { "kills"   "1" }
-						"g3sg1" { "kills"   "1" }
-					}
-				}
-			}
-		}
-	}
-	
-	// Custom mapgroups
-	"mapgroups" {
-		"mg_bombcollection" {
-			"name"  "mg_bombcollection"
-			"maps" {
-				"de_abbey"		""
-				"de_austria"	""
-				"de_aztec"      ""
-				"de_breach"     ""
-				"de_cache"      ""
-				"de_canals"     ""
-				"de_cbble"		""
-				"de_dust2"		""
-				"de_inferno"    ""
-				"de_mirage"     ""
-				"de_nuke"       ""
-				"de_overpass"   ""
-				"de_seaside"    ""
-				"de_train"      ""
-				"de_vertigo"    ""
-				"de_zoo"        ""
-			}
-		}
-	}
+                    "weaponprogression_t" {
+                        "deagle"        { "kills"   "5" }
+                        "awp"           { "kills"   "5" }
+                        "knifegg"       { "kills"   "1" }
+                    }
+                }
+
+                "gungametrbomb" {
+                    "maxplayers"    "10"
+
+                    // These are the configs that get executed when a game mode of this type is created
+                    "exec" {
+                        "exec"  "server_last.cfg"
+                    }
+
+                    "mapgroupsMP" {
+                        "mg_demolition" ""
+                    }
+
+                    "weaponprogression_ct" {
+                        "m4a1"      { "kills"   "1" }
+                        "awp"       { "kills"   "1" }
+                        "Scar20"    { "kills"   "1" }
+                    }
+
+                    "weaponprogression_t"  {
+                        "ak47"  { "kills"   "1" }
+                        "awp"   { "kills"   "1" }
+                        "g3sg1" { "kills"   "1" }
+                    }
+                }
+            }
+        }
+    }
+
+    // Custom mapgroups
+    "mapgroups" {
+        "mg_bombcollection" {
+            "name"  "mg_bombcollection"
+            "maps" {
+                "de_abbey"      ""
+                "de_austria"    ""
+                "de_aztec"      ""
+                "de_breach"     ""
+                "de_cache"      ""
+                "de_canals"     ""
+                "de_cbble"      ""
+                "de_dust2"      ""
+                "de_inferno"    ""
+                "de_mirage"     ""
+                "de_nuke"       ""
+                "de_overpass"   ""
+                "de_seaside"    ""
+                "de_train"      ""
+                "de_vertigo"    ""
+                "de_zoo"        ""
+            }
+        }
+    }
 }
