@@ -33,44 +33,50 @@ End
 
 //----------------------------------------------------------------------------
 
-// Sane weapon templates based on meta
+// These preferences seem weird, but only the top few apply to buy actions
+// The rest are there to make sure the bots will upgrade when they come across a better gun
 
 Template Push
-	WeaponPreference = ak47
-	WeaponPreference = m4a1
-	WeaponPreference = galilar
-	WeaponPreference = famas
-	WeaponPreference = ump45
-	WeaponPreference = mp7
+    WeaponPreference = m4a1
+    WeaponPreference = ak47
+    WeaponPreference = ump45
+    WeaponPreference = mp7
+    WeaponPreference = sg556
+    WeaponPreference = aug
+    WeaponPreference = awp
+    WeaponPreference = galilar
+    WeaponPreference = famas
 
-	Aggression = 80
-	Skin = 1
+    Aggression = 100
+    Skin = 1
 End
 
 Template Range
-	WeaponPreference = aug
-	WeaponPreference = sg556
-	WeaponPreference = famas
-	WeaponPreference = galilar
-	WeaponPreference = mp7
-	WeaponPreference = ump45
+    WeaponPreference = aug
+    WeaponPreference = sg556
+    WeaponPreference = famas
+    WeaponPreference = galilar
+    WeaponPreference = ak47
+    WeaponPreference = m4a1
+    WeaponPreference = ump45
+    WeaponPreference = mp7
+	WeaponPreference = awp
 
-	Aggression = 50
-	Skin = 2
+    Aggression = 60
+    Skin = 2
 End
 
 Template Sniper
-	WeaponPreference = awp
-	WeaponPreference = ssg08
-	WeaponPreference = mp7
-	WeaponPreference = ump45
-	WeaponPreference = famas
-	WeaponPreference = galilar
+    WeaponPreference = awp
+    WeaponPreference = ak47
+    WeaponPreference = m4a1
+    WeaponPreference = ump45
+    WeaponPreference = famas
+    WeaponPreference = galilar
 
-	Aggression = 20
-	Skin = 3
+    Aggression = 10
+    Skin = 3
 End
-
 
 // skill templates
 Template Expert
