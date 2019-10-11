@@ -1,8 +1,4 @@
-de_abbey
-de_austria
-de_aztec
 de_breach
-de_cache
 de_canals
 de_cbble
 de_dust2
@@ -14,3 +10,7 @@ de_seaside
 de_train
 de_vertigo
 de_zoo
+workshop/1215935299/de_abbey
+workshop/1733842505/de_aztec_cso2
+workshop/1855851320/de_cache
+workshop/727462766/de_austria
