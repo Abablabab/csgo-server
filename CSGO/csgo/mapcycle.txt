@@ -1,4 +1,5 @@
 de_breach
+de_cache
 de_canals
 de_cbble
 de_dust2
@@ -11,5 +12,4 @@ de_train
 de_vertigo
 de_zoo
 workshop/1215935299/de_abbey
-workshop/1855851320/de_cache_new
 workshop/727462766/de_austria
