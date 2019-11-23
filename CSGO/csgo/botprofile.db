@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------
 // Edited by Ross
 //
-// This is a combination easy/hard bot config, the easy and medium bots use 
+// This is a combination easy/hard bot config, the easy and medium bots use
 // difficulty values from the unmodified CSGO bot settings, the hard and expert
 // bots use settings defined by the gamebanana guy
 //
@@ -69,11 +69,11 @@ End
 
 Template Sniper
     WeaponPreference = awp
-    WeaponPreference = ak47
-    WeaponPreference = m4a1
-    WeaponPreference = ump45
     WeaponPreference = famas
     WeaponPreference = galilar
+    WeaponPreference = ump45
+    WeaponPreference = ak47
+    WeaponPreference = m4a1
 
     Aggression = 10
     Skin = 3
@@ -134,7 +134,7 @@ End
 
 //----------------------------------------------------------------------------
 //
-// These are the individual bot profiles, which inherit first from 
+// These are the individual bot profiles, which inherit first from
 // Default and then the specified Template(s), in order
 //
 
