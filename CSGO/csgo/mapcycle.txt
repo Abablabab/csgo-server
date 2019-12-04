@@ -7,6 +7,7 @@ de_inferno
 de_mirage
 de_nuke 
 de_overpass
+de_studio
 de_train
 de_vertigo
 workshop/727462766/de_austria
