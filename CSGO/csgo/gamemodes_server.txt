@@ -19,7 +19,8 @@
                         "exec"      "jim.cfg"
                         //"exec"    "bots_none.cfg"
                         //"exec"    "bots_easy.cfg"
-                        "exec"      "bots_hard.cfg"
+                        "exec"      "bots_normal.cfg"
+                        //"exec"    "bots_hard.cfg"
                     }
 
                     // List of mapgroups valid for this game mode ( competitive )
