@@ -1,2 +1,19 @@
 // Austria
 727462766
+// And now some maps from the 2019 MapCore finalists
+// Mutiny
+1978052734
+// Anubis
+1984883124
+// Basalt
+1984383383
+// Mustang
+1980781825
+// Chlorine
+1981407062
+// Victoria
+1984417232
+// Gongji
+1930485028
+// Zenith
+1855652898
