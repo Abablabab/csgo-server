@@ -116,7 +116,6 @@
                 "de_vertigo"    ""
                 "de_studio"     ""
                 "workshop/727462766/de_austria"     ""
-                "workshop/236706599/de_mist"        ""
             }
         }
     }
