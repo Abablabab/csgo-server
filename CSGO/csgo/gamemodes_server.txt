@@ -117,12 +117,8 @@
                 "de_train"      ""
                 "de_vertigo"    ""
                 "workshop/727462766/de_austria"     ""
-                "workshop/1855652898/de_zenith"     ""
-                "workshop/1930485028/de_gongji"     ""
-                "workshop/1978052734/de_mutiny"     ""
                 "workshop/1980781825/de_mustang"    ""
                 "workshop/1981407062/de_chlorine"   ""
-                "workshop/1984383383/de_basalt"     ""
                 "workshop/1984417232/de_victoria"   ""
                 "workshop/1984883124/de_anubis"     ""
             }
