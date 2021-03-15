@@ -1,11 +1,4 @@
-// Austria
-727462766
-// And now some maps from the 2019 MapCore finalists
-// Anubis
-1984883124
-// Mustang
-1980781825
-// Chlorine
-1981407062
-// Victoria
-1984417232
+//// workshop IDs, eg
+
+//// Austria
+//727462766
